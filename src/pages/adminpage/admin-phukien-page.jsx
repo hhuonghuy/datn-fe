@@ -17,7 +17,7 @@ const AdminPhukienPage = () => {
 	// delete
 	const Remove = (id) => {
 		if (window.confirm('Do you want to remove')) {
-			fetch('http://localhost:4021/product/deleteproduct/' + id, {
+			fetch('https://datn-be-fpoly-hcm.vercel.app/product/deleteproduct/' + id, {
 				method: 'DELETE',
 			})
 				.then((res) => {
@@ -35,7 +35,7 @@ const AdminPhukienPage = () => {
 	};
 
 	useEffect(() => {
-		fetch(`http://localhost:4021/product/phukien1`)
+		fetch(`https://datn-be-fpoly-hcm.vercel.app/product/phukien1`)
 			.then((res) => {
 				return res.json();
 			})

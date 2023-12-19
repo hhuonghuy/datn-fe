@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const base_url = 'https://bui-huy-huong-convert-be-dangtienhung.vercel.app/api';
+const base_url = 'https://datn-be-fpoly-hcm.vercel.app/api';
 
 export const authApi = {
 	register: async (data) => {

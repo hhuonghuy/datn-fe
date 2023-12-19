@@ -17,7 +17,7 @@ const AdminAoPoloPage = () => {
 	// delete
 	const Remove = (id) => {
 		if (window.confirm('Do you want to remove')) {
-			fetch('http://localhost:4021/product/deleteproduct/' + id, {
+			fetch('https://datn-be-fpoly-hcm.vercel.app/product/deleteproduct/' + id, {
 				method: 'DELETE',
 			})
 				.then((res) => {
@@ -35,7 +35,7 @@ const AdminAoPoloPage = () => {
 	};
 
 	useEffect(() => {
-		fetch(`http://localhost:4021/product/aopolo`)
+		fetch(`https://datn-be-fpoly-hcm.vercel.app/product/aopolo`)
 			.then((res) => {
 				return res.json();
 			})

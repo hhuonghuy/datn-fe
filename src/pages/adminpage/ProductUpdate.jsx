@@ -144,7 +144,7 @@ const UpdateProduct = () => {
     const [date, setDate] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:4021/product/updateproduct/${proid}`)
+        fetch(`https://datn-be-fpoly-hcm.vercel.app/product/updateproduct/${proid}`)
             .then((res) => res.json())
             .then((resp) => {
                 setId(resp.id);
@@ -168,7 +168,7 @@ const UpdateProduct = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const proData = { id, productname, urlimage, price, sortdes, description, uppdate, idtype, gentype, view, hot, date };
-        fetch(`http://localhost:4021/product/updateproduct/${proid}`, {
+        fetch(`https://datn-be-fpoly-hcm.vercel.app/product/updateproduct/${proid}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(proData)

@@ -14,7 +14,7 @@ const DtProduct = () => {
 	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
-		fetch('http://localhost:4021/product/' + proid)
+		fetch('https://datn-be-fpoly-hcm.vercel.app/product/' + proid)
 			.then((res) => res.json())
 			.then((resp) => {
 				console.log(resp);

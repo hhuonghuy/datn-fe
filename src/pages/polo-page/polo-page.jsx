@@ -12,7 +12,7 @@ const PoloPage = () => {
     //show
     const [product, setProduct] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:4021/product/aopolo').then(res =>{
+      fetch('https://datn-be-fpoly-hcm.vercel.app/product/aopolo').then(res =>{
         return res.json();
       }).then((resp) => {
           setProduct(resp);

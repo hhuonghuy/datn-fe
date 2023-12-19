@@ -12,7 +12,7 @@ const AoThunPage = () => {
     //show
     const [product, setProduct] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:4021/product/aothun').then(res =>{
+      fetch('https://datn-be-fpoly-hcm.vercel.app/product/aothun').then(res =>{
         return res.json();
       }).then((resp) => {
           setProduct(resp);

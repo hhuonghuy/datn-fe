@@ -12,7 +12,7 @@ const AosomiPage = () => {
     //show
     const [product, setProduct] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:4021/product/aosomi').then(res =>{
+      fetch('https://datn-be-fpoly-hcm.vercel.app/product/aosomi').then(res =>{
         return res.json();
       }).then((resp) => {
           setProduct(resp);

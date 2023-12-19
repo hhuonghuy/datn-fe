@@ -26,7 +26,7 @@ const AddProduct = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const proData = { id, productname, urlimage, price, sortdes, description, uppdate, idtype, gentype, view, hot, date };
-        fetch("http://localhost:4021/product/addproduct", {
+        fetch("https://datn-be-fpoly-hcm.vercel.app/product/addproduct", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(proData)
