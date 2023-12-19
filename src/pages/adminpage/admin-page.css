@@ -1,0 +1,69 @@
+.main-admin .navv {
+	background: #050725;
+	width: 514px;
+	margin-top: -3px;
+}
+
+.main-admin {
+	display: flex;
+}
+
+.main-admin .table h2 {
+	margin-top: 200px;
+	margin-bottom: 30px;
+}
+
+.main-admin .table > :not(caption) > * > * {
+	background-color: white;
+}
+
+.main-admin .navv li {
+	font-size: 35px;
+}
+
+.main-admin .navv ul {
+	padding: 40px 40px;
+}
+
+.main-admin .navv a img {
+	width: 45px;
+	margin-right: 20px;
+}
+
+.main-admin li {
+	padding: 25px 0;
+}
+
+@media (max-width: 1030px) {
+	.main-admin .navv li {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	.main-admin .navv ul {
+		display: flex;
+		gap: 10px;
+	}
+
+	.main-admin .user {
+		width: 33px !important;
+	}
+
+	.main-admin .navv a img {
+		width: 22px;
+		padding-bottom: 10px;
+	}
+
+	.main-admin .navv li {
+		font-size: 22px;
+	}
+
+	.main-admin .navv {
+		width: 100%;
+	}
+
+	.main-admin {
+		display: grid;
+	}
+}

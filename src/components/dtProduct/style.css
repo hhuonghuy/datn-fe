@@ -1,0 +1,142 @@
+.product-detail .container {
+	display: flex;
+	margin-top: 50px;
+	align-items: start;
+}
+
+.product-detail .img {
+	width: 496px;
+	height: 400px;
+	flex-shrink: 0;
+}
+
+.product-detail .item-img {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.product-detail .conten {
+	margin-top: 100px;
+}
+
+.product-detail .size h4 {
+	background-color: rgba(217, 217, 217, 1);
+	padding: 10px 15px;
+}
+
+.product-detail .button button {
+	color: white;
+	padding: 5px 10px;
+	background-color: rgba(0, 0, 0, 0.81);
+	margin: 30px 0;
+}
+
+.product-detail .button {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+	margin-bottom: 15px;
+}
+
+.product-detail .button button:last-child {
+	margin-left: 20px;
+}
+
+.product-detail .conten p {
+	max-width: 700px;
+}
+
+.product-detail p {
+	margin-bottom: 0;
+}
+
+.product-detail li {
+	list-style: disc;
+}
+
+/* Trong tệp CSS hoặc style.scss của bạn */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Màu chữ */
+    background-color: #007bff; /* Màu nền */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+  }
+  
+  .price {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .price p {
+    margin: 0;
+    font-style: italic;
+    font-size: 18pt;
+    
+  }
+  
+  .price span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Màu chữ */
+  }
+  .product-info p{
+    font-size: 16pt;
+    font-weight: normal;
+	display: flex;
+	margin-top: 5%;
+	
+  }
+  .product-info h3{
+	display: flex;
+	margin-left: 35%;
+	margin-top: -30%;
+  }
+  
+  .product-detail img{
+    width: 50%;
+  }
+@media (max-width: 800px) {
+	.product-detail .container {
+		display: grid;
+		justify-content: center;
+	}
+	.product-info h3{
+		margin-left: 250px;
+		margin-top: -200px;
+	}
+	.product-info p{
+		margin-top: 10px;
+	}
+	.product-detail .button button {
+		margin: 10px 0;
+	}
+
+	.product-detail .size {
+		justify-content: center;
+	}
+
+	.product-detail .button {
+		text-align: center;
+	}
+}
+
+@media (max-width: 550px) {
+	.product-detail .item-img img {
+		width: 100%;
+	}
+
+	.product-detail .img {
+		width: 100%;
+		height: 100%;
+	}
+}

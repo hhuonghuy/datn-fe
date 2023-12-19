@@ -1,0 +1,6 @@
+.top .n-ao button:hover{
+    color: tomato;
+    margin-top: 4px;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid tomato;
+}

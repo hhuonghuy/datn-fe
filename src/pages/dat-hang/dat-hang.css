@@ -1,0 +1,87 @@
+.dat-hang .div {
+	width: 100%;
+	max-width: 580px;
+	height: 77px;
+	background: #23cdf2;
+}
+
+.dat-hang form button {
+	width: 100%;
+	max-width: 583px;
+	height: 77px;
+	flex-shrink: 0;
+	background: #fcd400;
+	margin-bottom: 50px;
+}
+.dat-hang .remove{
+	background-color: #f44336; /* Màu nền */
+	color: white; /* Màu chữ */
+	border: none; /* Không có đường viền */
+	padding: 10px; /* Kích thước padding (lề) */
+	text-align: center; /* Canh giữa nội dung */
+	text-decoration: none; /* Không có gạch chân cho văn bản */
+	display: inline-block; /* Hiển thị như một khối mức độ inline */
+	font-size: 16px; /* Kích thước font chữ */
+	cursor: pointer; /* Hình con trỏ khi hover */
+	border-radius: 5px; /* Bo tròn góc */
+	transition: background-color 0.3s; /* Hiệu ứng màu nền khi hover */
+}
+.dat-hang .total{
+	color: red;
+	margin-left: 30px;
+	font-weight: bold;
+
+}
+.dat-hang .button{
+	background-color: #4CAF50; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Không có đường viền */
+  padding: 10px 20px; /* Kích thước padding (lề) */
+  text-align: center; /* Canh giữa nội dung */
+  text-decoration: none; /* Không có gạch chân cho văn bản */
+  display: inline-block; /* Hiển thị như một khối mức độ inline */
+  font-size: 16px; /* Kích thước font chữ */
+  cursor: pointer; /* Hình con trỏ khi hover */
+  border-radius: 5px; /* Bo tròn góc */
+  transition: background-color 0.3s; /* Hiệu ứng màu nền khi hover */
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.dat-hang .giam, .tang{
+	border: 1px solid black;
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.dat-hang .button:hover {
+	background-color: #45a049; /* Màu nền khi hover */
+  }
+.dat-hang .xoa{
+	border: 1px solid black;
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px 10px;
+}
+.dat-hang .gia{
+	font-size: 16pt;
+}
+@media (max-width: 1000px) {
+	.dat-hang .container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.dat-hang .giam, .tang{
+		margin-left: 20px;
+	}
+}
+
+.dat-hang form {
+	padding-left: 100px;
+}

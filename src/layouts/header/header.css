@@ -1,0 +1,72 @@
+.hover a{
+    display: block;
+    padding: 15px 0px;
+    position: relative;
+}
+.hover a::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: tomato;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+.hover a::before{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: tomato;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+.hover a:hover:after{
+    width: 100%;
+}
+.hover a:hover::before{
+    width: 100%;
+   
+}
+.hover a:hover{
+    color: tomato;
+}
+.dropdown .dropdown-btn{
+    display: block;
+    padding: 15px 0px;
+    position: relative;
+}
+.dropdown .dropdown-btn::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: tomato;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+.dropdown .dropdown-btn::before{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: tomato;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+.dropdown .dropdown-btn:hover:after{
+    width: 100%;
+}
+.dropdown .dropdown-btn:hover::before{
+    width: 100%;
+}
+.dropdown .dropdown-btn:hover{
+    color: tomato;
+}
+.dropdown .dropdown-content:hover{
+    color: tomato
+}
