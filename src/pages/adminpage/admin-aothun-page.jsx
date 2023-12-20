@@ -17,9 +17,13 @@ const AdminAoThunPage = () => {
 	// delete
 	const Remove = (id) => {
 		if (window.confirm('Do you want to remove')) {
-			fetch('https://datn-be-fpoly-hcm.vercel.app/product/deleteproduct/' + id, {
-				method: 'DELETE',
-			})
+			fetch(
+				'https://bui-huy-huong-convert-be.vercel.app/product/deleteproduct/' +
+					id,
+				{
+					method: 'DELETE',
+				}
+			)
 				.then((res) => {
 					if (res.ok) {
 						alert('Remove successfully.');
@@ -35,7 +39,7 @@ const AdminAoThunPage = () => {
 	};
 
 	useEffect(() => {
-		fetch(`https://datn-be-fpoly-hcm.vercel.app/product/aothun`)
+		fetch(`https://bui-huy-huong-convert-be.vercel.app/product/aothun`)
 			.then((res) => {
 				return res.json();
 			})

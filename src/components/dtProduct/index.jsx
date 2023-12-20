@@ -14,7 +14,7 @@ const DtProduct = () => {
 	const [cart, setCart] = useState([]);
 
 	useEffect(() => {
-		fetch('https://datn-be-fpoly-hcm.vercel.app/product/' + proid)
+		fetch('https://bui-huy-huong-convert-be.vercel.app/product/' + proid)
 			.then((res) => res.json())
 			.then((resp) => {
 				console.log(resp);
@@ -80,10 +80,10 @@ const DtProduct = () => {
                 VIEW CART
             </button> */}
 
-					{/*                     
+					{/*
 					<div className="img">
 						<img src="/img/a5 4.png" className="img1" />
-						
+
 					</div> */}
 					{/* <div className="conten lh-base">
 						<h3 className="fw-bold fs-2 mb-4">

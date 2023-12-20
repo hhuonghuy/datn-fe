@@ -17,9 +17,13 @@ const AdminPage = () => {
 	// delete
 	const Remove = (id) => {
 		if (window.confirm('Do you want to remove')) {
-			fetch('https://datn-be-fpoly-hcm.vercel.app/product/deleteproduct/' + id, {
-				method: 'DELETE',
-			})
+			fetch(
+				'https://bui-huy-huong-convert-be.vercel.app/product/deleteproduct/' +
+					id,
+				{
+					method: 'DELETE',
+				}
+			)
 				.then((res) => {
 					if (res.ok) {
 						alert('Remove successfully.');
@@ -35,7 +39,7 @@ const AdminPage = () => {
 	};
 
 	useEffect(() => {
-		fetch(`https://datn-be-fpoly-hcm.vercel.app/product/allproduct`)
+		fetch(`https://bui-huy-huong-convert-be.vercel.app/product/allproduct`)
 			.then((res) => {
 				return res.json();
 			})
